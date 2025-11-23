@@ -70,22 +70,22 @@ public class PlayerMove : MonoBehaviour
         {
             if (TL == true)
             {
-                SceneManger.LoadScene(2);
+                SceneManager.LoadScene(2);
                 Debug.Log("Interact TL");
             }
             else if (TR == true)
             {
-                SceneManger.LoadScene(3);
+                SceneManager.LoadScene(3);
                 Debug.Log("Interact TR");
             }
             else if (BL == true)
             {
-                SceneManger.LoadScene(4);
+                SceneManager.LoadScene(4);
                 Debug.Log("Interact BL");
             }
             else if (BR == true) 
             {
-                SceneManger.LoadScene(5);
+                SceneManager.LoadScene(5);
                 Debug.Log("Interact BR");
             }
             else
