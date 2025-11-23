@@ -28,6 +28,11 @@ public class PlayerMove : MonoBehaviour
         isFacingRight = true;
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        TR = false;
+        TL = false;
+        BR = false;
+        BL = false;
+
     }
 
     // Update is called once per frame
@@ -63,20 +68,24 @@ public class PlayerMove : MonoBehaviour
     {
         if(value.isPressed)
         {
-            if (TL = true)
+            if (TL == true)
             {
+                SceneManger.LoadScene(2);
                 Debug.Log("Interact TL");
             }
-            else if (TR = true)
+            else if (TR == true)
             {
+                SceneManger.LoadScene(3);
                 Debug.Log("Interact TR");
             }
-            else if (BL = true)
+            else if (BL == true)
             {
+                SceneManger.LoadScene(4);
                 Debug.Log("Interact BL");
             }
-            else if (BR = true)
+            else if (BR == true) 
             {
+                SceneManger.LoadScene(5);
                 Debug.Log("Interact BR");
             }
             else
@@ -104,6 +113,7 @@ public class PlayerMove : MonoBehaviour
             myCanvas.enabled = true;
             TL = true;
             Debug.Log("Active1");
+            Debug.Log(TL);
         }
 
         if (gob.tag == "DoorTR")
@@ -111,6 +121,7 @@ public class PlayerMove : MonoBehaviour
             myCanvas.enabled = true;
             TR = true;
             Debug.Log("Active2");
+            Debug.Log(TR);
         }
 
         if (gob.tag == "DoorBL")
@@ -118,6 +129,7 @@ public class PlayerMove : MonoBehaviour
             myCanvas.enabled = true;
             BL = true;
             Debug.Log("Active3");
+            Debug.Log(BL);
         }
 
         if (gob.tag == "DoorBR")
@@ -125,6 +137,7 @@ public class PlayerMove : MonoBehaviour
             myCanvas.enabled = true;
             BR = true;
             Debug.Log("Active4");
+            Debug.Log(BR);
         }
 
     }
@@ -137,5 +150,9 @@ public class PlayerMove : MonoBehaviour
         BR = false;
         BL = false;
         Debug.Log("INActive");
+        Debug.Log(TR);
+        Debug.Log(TL);
+        Debug.Log(BR);
+        Debug.Log(BL);
     }
 }

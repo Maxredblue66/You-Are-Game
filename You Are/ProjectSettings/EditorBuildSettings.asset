@@ -11,6 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartArea.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Dungeon1 (SAD).unity
+    guid: 974dcbdf4219cbd498f1b24d3eccc9e1
+  - enabled: 1
+    path: Assets/Scenes/Dungeon2 (Happy).unity
+    guid: 722602d95a496a640877ad28edeadf6e
+  - enabled: 1
+    path: Assets/Scenes/Dungeon3 (Angry).unity
+    guid: a7b147e7c829081479c2bf9dc487e7c2
+  - enabled: 1
+    path: Assets/Scenes/Dungeon4 (Scare).unity
+    guid: 4826a9c6ccffa8a48b8789a1f8568da2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
