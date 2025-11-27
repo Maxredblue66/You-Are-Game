@@ -18,6 +18,7 @@ public class PlayerMove : MonoBehaviour
     private bool isFacingRight;
 
     public Canvas myCanvas;
+    public Canvas myCanvas2;
     private bool TL;
     private bool TR;
     private bool BL;
@@ -32,6 +33,7 @@ public class PlayerMove : MonoBehaviour
         TL = false;
         BR = false;
         BL = false;
+        anim.SetBool("IsGrounded", true);
 
     }
 
@@ -118,7 +120,7 @@ public class PlayerMove : MonoBehaviour
 
         if (gob.tag == "DoorTR")
         {
-            myCanvas.enabled = true;
+            myCanvas2.enabled = true;
             TR = true;
             Debug.Log("Active2");
             Debug.Log(TR);
@@ -126,7 +128,7 @@ public class PlayerMove : MonoBehaviour
 
         if (gob.tag == "DoorBL")
         {
-            myCanvas.enabled = true;
+            myCanvas2.enabled = true;
             BL = true;
             Debug.Log("Active3");
             Debug.Log(BL);
@@ -134,7 +136,7 @@ public class PlayerMove : MonoBehaviour
 
         if (gob.tag == "DoorBR")
         {
-            myCanvas.enabled = true;
+            myCanvas2.enabled = true;
             BR = true;
             Debug.Log("Active4");
             Debug.Log(BR);
@@ -145,6 +147,7 @@ public class PlayerMove : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         myCanvas.enabled = false;
+        myCanvas2.enabled = false;
         TR = false;
         TL = false;
         BR = false;
